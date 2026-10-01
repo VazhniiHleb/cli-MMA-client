@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/bichanus/Projects/MMA_client/build/windows/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

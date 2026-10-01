@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/MMA_client.dir/link.d CMakeFiles/MMA_client.dir/main.cpp.o -o MMA_client

@@ -1,0 +1,3 @@
+/home/bichanus/Projects/MMA_client/build/windows/CMakeFiles/MMA_client.dir
+/home/bichanus/Projects/MMA_client/build/windows/CMakeFiles/edit_cache.dir
+/home/bichanus/Projects/MMA_client/build/windows/CMakeFiles/rebuild_cache.dir
