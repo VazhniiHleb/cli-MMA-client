@@ -1,0 +1,21 @@
+# Конфиг сервера. Формат: key=value, по одному на строку.
+# Строки, начинающиеся с # — комментарии, пустые строки игнорируются.
+# Этот файл должен лежать рядом с бинарником (или путь передаётся первым
+# аргументом командной строки: ./MMA /путь/до/своего_конфига)
+
+host=0.0.0.0
+port=8080
+
+# --- FramerConfig ---
+opcode_pos=1
+version_pos=4
+route_len_pos=6
+options_count_pos=7
+
+route_order=3
+options_order=2
+payload_order=1
+
+options_key_first=1
+header_length=29
+max_message_length=10000000
