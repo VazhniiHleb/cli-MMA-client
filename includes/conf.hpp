@@ -3,13 +3,13 @@
 struct MmaFramerConfig
 {
     // Header configuration
-    std::uint8_t header_length = 29;
+    std::uint8_t header_length = 40;
 
     // Positions of 1-byte header fields (1-based)
-    std::uint8_t opcode_pos        = 1;
-    std::uint8_t version_pos       = 2;
-    std::uint8_t route_len_pos     = 3;
-    std::uint8_t options_count_pos = 4;
+    std::uint8_t opcode_pos        = 2;
+    std::uint8_t version_pos       = 4;
+    std::uint8_t route_len_pos     = 6;
+    std::uint8_t options_count_pos = 7;
 
     // Positions of 4-byte fields in the header tail
     std::uint8_t options_len_order = 1;
@@ -17,14 +17,14 @@ struct MmaFramerConfig
     std::uint8_t req_id_order      = 3;
 
     // Body section order
-    por<uint8_t> body_orders = {1, 2, 3};
+    por<uint8_t> body_orders = {1, 3, 2};
 
     // Option serialization
     bool options_key_first = true;
 
     // Maximum body size (server-side limit)
     std::uint32_t max_message_length = 10'000'000;
-    por<uint8_t> big_bytes_config = {1, 2, 3};
+    por<uint8_t> big_bytes_config = {2, 1, 3};
 };
 
 
